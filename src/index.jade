@@ -1,0 +1,47 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='styles/main.min.css')
+    link(rel='stylesheet', href='styles/libs.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css')
+    //-script(src='javascripts/vendor/modernizr-2.7.1.min.js')
+  body
+    <!--[if lt IE 8]>
+    p.browsehappy
+      | You are using an <strong>outdated</strong> browser.
+      | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      | to improve your experience.
+    <![endif]-->
+
+    .wrapper
+
+      .content
+
+    script window.jQuery || document.write('<script src="scripts/vendor/jquery.js"><\/script>')
+    script(src='scripts/libs.min.js')
+    script(src='scripts/data.js')
+    script(id='entry-template' type='text/x-handlebars-template').
+      <div class="hero-text">
+        <h2 class="title">{{location}}</h2>
+        <p class="text">{{description}}</p>
+      </div>
+      <div class="tt-box {{locationID}}-box">
+        <img class="tt-img" src='images/{{renderSrc}}'>
+        <img class="tt-img" src='images/{{realitySrc}}'>
+      </div> 
+      <div class="nav">
+        <a class="prev arrow" href="{{previousLocationID}}">Prev</a>
+        <a class="next arrow" href="{{nextLocationID}}">Next</a>
+      </div>
+
+    script(src='scripts/main.min.js')
+    script(type='text/javascript').
+      Main.init();
+     
+

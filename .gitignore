@@ -1,0 +1,47 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tar
+*.gz
+*.tar.gz
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.bundle/
+ehthumbs.db
+Thumbs.db
+
+# Foundation Stuff #
+####################
+.sass-cache
+*.vagrant
+tmp/shared/*
+node_modules/
+bower_components/
+www/
+
+Gemfile.lock
+
+!*.gitkeep
+!tmp/db.sql

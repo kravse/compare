@@ -1,0 +1,38 @@
+
+//- --------------------------------------------------------
+//- Mixins
+//- --------------------------------------------------------
+em(num)
+  (num/$p * 1em)
+  
+media($condition = 'screen', $length = 0)
+  if $condition == 'mobile'
+    @media (max-width: 640px)
+      {block}
+  else if $condition == 'min'
+    @media (min-width: $length)
+      {block}
+  else if $condition == 'max'
+    @media (max-width: $length)
+      {block}
+  else if $condition == 'print'
+    @media (print)
+      {block}
+  else
+    @media $condition
+      {block}
+
+// Clear Fix
+
+.cf:before,
+.cf:after
+  content: ' '
+  display: table
+
+.cf:after
+  clear: both
+
+.cf
+  *zoom: 1
+
+
