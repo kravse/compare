@@ -10,3 +10,6 @@ Instructions:
 2) Run gulp to compile all static assets from 'src' into their build destinations. 
 
 3) Optional: Run gulp watch to poll for changes. 
+
+
+![Screenshot of app](/src/images/screenshot.png)
